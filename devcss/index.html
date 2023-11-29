@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <title>Developers</title>
+</head>
+<body>
+
+
+<nav>
+    <ul>
+ <li>
+  <img src="img/dev.png" alt="" width="50" height="50" style="vertical-align:middle;margin:0px 50px" color="write"> 
+ </li>
+    </ul>
+    <ul>
+        <li><a href="#"></a>Hakkımızda</li>
+        <li><a href="#"></a>Dökumanlar</li>
+        <li><a href="#" role="button">GitHub</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+  <h1><Strong>-İyi bir yazılımcı olmak istiyorsan ekibimize katıl- </Strong></h1>
+
+  <img src="img/görsel.png" style="border-radius: 8px;" width="1200" height="500"   alt="">
+  <form>
+
+    <!-- Grid -->
+    <div class="grid">
+  
+      <!-- Markup example 1: input is inside label -->
+      <label for="Adı">
+        Adı
+        <input type="text" id="Adı" name="Adı" placeholder="Adı" required>
+      </label>
+  
+      <label for="Soyadı">
+        Soyadı
+        <input type="text" id="Soyadı" name="Soyadı" placeholder="Soyadı" required>
+      </label>
+  
+    </div>
+  
+    <!-- Markup example 2: input is after label -->
+    <label for="email">Email adres</label>
+    <input type="email" id="email" name="email" placeholder="Email adres" required>
+    <small>e-mail adresinizin doğruluğundan emin olun</small>
+    <label for="Dokümanlar">Dokümanlar</label>
+    <select id="Dokümanlar" required>
+      <option value="" selected>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+      <option>Bootstrap</option>
+      <option>React</option>
+    </select>
+    
+    <!-- Radios -->
+    <fieldset>
+      <legend>Seviye</legend>
+      <label for="Başlangıç">
+        <input type="radio" id="Başlangıç" name="Seviye" value="Başlangıç" checked>
+        Başlangıç
+      </label>
+      <label for="Orta">
+        <input type="radio" id="Orta" name="Seviye" value="Orta">
+        Orta
+      </label>
+      <label for="İleri">
+        <input type="radio" id="İleri" name="Seviye" value="İleri">
+        İleri
+      </label>
+    </fieldset>
+    
+    <!-- Checkboxes -->
+    <fieldset>
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms">
+        Hükümlere ve koşullara katılıyorum
+      </label>
+      <label for="terms_sharing">
+        <input type="checkbox" id="terms_sharing" name="terms_sharing" disabled checked>
+        Bilgilerimi ortaklarla paylaşmayı kabul ediyorum
+      </label>
+    </fieldset>
+    
+    <!-- Switches -->
+    <fieldset>
+      <label for="switch">
+        <input type="checkbox" id="switch" name="switch" role="switch">
+        Profilimde yayınla
+      </label>
+      <label for="switch_disabled">
+        <input type="checkbox" id="switch_disabled" name="switch_disabled" role="switch_disabled" disabled checked>
+        Kullanıcı bir sonraki oturum açışında parolayı değiştirmeli
+      </label>
+    </fieldset>
+
+
+
+<!-- File browser -->
+<label for="file">Dosya Yükle
+  <input type="file" id="file" name="file">
+  
+</label>
+<article aria-busy="true"></article>
+<button>Kayıt ol</button>
+<button>İptal Et</button>
+
+</main>
+
+</body>
+</html>
